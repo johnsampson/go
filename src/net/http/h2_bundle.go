@@ -3271,12 +3271,6 @@ func http2validWireHeaderFieldName(v string) bool {
 }
 
 func http2httpCodeString(code int) string {
-	switch code {
-	case 200:
-		return "200"
-	case 404:
-		return "404"
-	}
 	return strconv.Itoa(code)
 }
 
